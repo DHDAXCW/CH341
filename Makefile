@@ -1,5 +1,5 @@
 ifeq ($(KERNELRELEASE), )
-KERNELDIR := /lib/modules/$(shell uname -r)/build
+KERNELDIR := /lib/modules/$(shell uname -r)/*
 PWD :=$(shell pwd)
 default:
 	$(MAKE) -C $(KERNELDIR)  M=$(PWD)  
